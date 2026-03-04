@@ -1,0 +1,60 @@
+---
+import { SITE } from '@/config/site';
+---
+
+<section id="hero" class="relative min-h-[90vh] flex items-center overflow-hidden bg-zinc-950" data-ps="src/components/home/Hero.astro:ah8lbi">
+  <!-- Subtle Background Pattern -->
+  <div class="absolute inset-0 opacity-20 pointer-events-none" data-ps="src/components/home/Hero.astro:iy4taf">
+    <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1764258559782-157578ff85ac?auto=format&w=1200&q=80" 
+      alt="Background texture" 
+      class="w-full h-full object-cover"
+      loading="lazy" data-ps="src/components/home/Hero.astro:gfvoyw" />
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center" data-ps="src/components/home/Hero.astro:iy4tag">
+    <div class="z-10" data-ps="src/components/home/Hero.astro:iy4tah">
+      <div class="hero-animate inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 text-xs font-bold tracking-widest uppercase mb-6" data-ps="src/components/home/Hero.astro:ecxgf3">
+        <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse" data-ps="src/components/home/Hero.astro:z1i1xb"></span>
+        Now Accepting New Projects
+      </div>
+      <h1 class="hero-animate hero-animate-delay-1 text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-[1.1] mb-8 text-white tracking-tight" data-ps="src/components/home/Hero.astro:307k1n">
+        Modern Websites for <span class="text-indigo-500" data-ps="src/components/home/Hero.astro:z1i1xa">Small Businesses.</span>
+      </h1>
+      <p class="hero-animate hero-animate-delay-2 text-xl md:text-2xl text-zinc-400 mb-10 max-w-xl leading-relaxed" data-ps="src/components/home/Hero.astro:6uykn5">
+        We build professional, responsive sites that help your business grow. High-end design without the agency price tag.
+      </p>
+      <div class="hero-animate hero-animate-delay-3 flex flex-wrap gap-4" data-ps="src/components/home/Hero.astro:ecxgf4">
+        <a href="#pricing" class="px-8 py-4 rounded-xl font-bold bg-indigo-600 text-white hover:bg-indigo-700 transition-all hover:scale-105 shadow-xl shadow-indigo-600/20" data-ps="src/components/home/Hero.astro:8zc1z">
+          Start Your Project
+        </a>
+        <a href="#process" class="px-8 py-4 rounded-xl font-bold bg-zinc-900 text-white border border-zinc-800 hover:bg-zinc-800 transition-all" data-ps="src/components/home/Hero.astro:8zc20">
+          View Process
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-animate hero-animate-delay-2 relative" data-ps="src/components/home/Hero.astro:ecxgf5">
+      <div class="absolute -inset-4 bg-indigo-600/10 blur-3xl rounded-full" data-ps="src/components/home/Hero.astro:ecxgf6"></div>
+      <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-zinc-800 rotate-1 lg:rotate-2" data-ps="src/components/home/Hero.astro:ecxgf7">
+        <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1740637977676-c8040b41dc7a?auto=format&w=1200&q=80" 
+          srcset="https://images.unsplash.com/photo-1740637977676-c8040b41dc7a?auto=format&w=320&q=80 320w, https://images.unsplash.com/photo-1740637977676-c8040b41dc7a?auto=format&w=480&q=80 480w, https://images.unsplash.com/photo-1740637977676-c8040b41dc7a?auto=format&w=640&q=80 640w, https://images.unsplash.com/photo-1740637977676-c8040b41dc7a?auto=format&w=768&q=80 768w, https://images.unsplash.com/photo-1740637977676-c8040b41dc7a?auto=format&w=1024&q=80 1024w, https://images.unsplash.com/photo-1740637977676-c8040b41dc7a?auto=format&w=1200&q=1200w"
+          sizes="(max-width: 768px) 100vw, 50vw"
+          alt="Modern tech workspace with laptop" 
+          class="w-full aspect-video object-cover"
+          loading="eager"
+          fetchpriority="high" data-ps="src/components/home/Hero.astro:gfvoyx" />
+      </div>
+      <!-- Floating Card -->
+      <div class="absolute -bottom-6 -left-6 md:-bottom-10 md:-left-10 bg-zinc-900 border border-zinc-800 p-6 rounded-2xl shadow-2xl hidden md:block max-w-xs" data-ps="src/components/home/Hero.astro:ecxgf8">
+        <div class="flex items-center gap-3 mb-2" data-ps="src/components/home/Hero.astro:ecxgf9">
+          <div class="flex -space-x-2" data-ps="src/components/home/Hero.astro:ecxgfa">
+            <div class="w-8 h-8 rounded-full bg-zinc-700 border-2 border-zinc-900" data-ps="src/components/home/Hero.astro:ecxgfb"></div>
+            <div class="w-8 h-8 rounded-full bg-indigo-600 border-2 border-zinc-900 flex items-center justify-center text-[10px] font-bold" data-ps="src/components/home/Hero.astro:ecxgfc">5.0</div>
+          </div>
+          <span class="text-xs font-bold text-white uppercase tracking-wider" data-ps="src/components/home/Hero.astro:z1i1wo">Trusted by local brands</span>
+        </div>
+        <p class="text-zinc-400 text-sm italic" data-ps="src/components/home/Hero.astro:6uykn4">"The professional design we needed at a fraction of agency costs."</p>
+      </div>
+    </div>
+  </div>
+</section>

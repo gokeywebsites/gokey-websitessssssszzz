@@ -1,0 +1,33 @@
+---
+import { SITE } from '@/config/site';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Hero from '@/components/home/Hero.astro';
+import Process from '@/components/home/Process.astro';
+import Guarantee from '@/components/home/Guarantee.astro';
+import Pricing from '@/components/home/Pricing.astro';
+import Contact from '@/components/home/Contact.astro';
+---
+
+<BaseLayout
+  title={SITE.title}
+  description={SITE.description}
+  type="website"
+  jsonLd={{
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: SITE.name,
+    url: new URL(Astro.url.pathname, SITE.url).toString(),
+    sameAs: Object.values(SITE.socials),
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+1-904-305-2393',
+      contactType: 'Sales',
+    },
+  }}
+>
+  <Hero />
+  <Process />
+  <Guarantee />
+  <Pricing />
+  <Contact />
+</BaseLayout>
